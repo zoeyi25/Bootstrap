@@ -7,11 +7,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <meta charset = "utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+      position: relative;
+  }
+  </style>
 <title>title</title>
 </head>
-<body>
+<body data-bs-spy = "scroll" data-bs-target = ".navbar" data-bs-offset = "10">
 
-<nav class = "navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+<nav class = "navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-center">
   <div class = "container-fluid">
     <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#collapsibleNavbar">
       <span class = "navbar-toggler-icon"></span>
@@ -24,19 +29,19 @@
           </a>
         </li>
         <li class = "nav-item">
-          <a class = "nav-link" href = "#">link</a>
+          <a class = "nav-link" href = "#section1">link</a>
         </li>
         <li class = "nav-item">
-          <a class = "nav-link" href = "#">another link</a>
+          <a class = "nav-link" href = "#section2">another link</a>
         </li>
         <li class = "nav-item">
-          <a class = "nav-link" href = "#">another another link</a>
+          <a class = "nav-link" href = "#section3">another another link</a>
         </li>
         <li class = "nav-item">
-          <a class = "nav-link" href = "#">another another another link</a>
+          <a class = "nav-link" href = "#section4">another another another link</a>
         </li>
         <li class = "nav-item">
-          <a class = "nav-link" href = "#">another another another another link</a>
+          <a class = "nav-link" href = "#section5">another another another another link</a>
         </li>
       </ul>
     </div>
@@ -82,6 +87,171 @@
   </button>
 </div>
 
+<div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+  <h1>Section 1</h1>
+  <pre>words
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </pre>
+</div>
+
+<div id="section2" class="container-fluid bg-warning text-white" style="padding:100px 20px;">
+  <h1>Section 2</h1>
+  <pre>words
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </pre>
+</div>
+
+<div id="section3" class="container-fluid bg-danger text-white" style="padding:100px 20px;">
+  <h1>Section 3</h1>
+  <pre>words
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </pre>
+</div>
+
+<div id="section4" class="container-fluid bg-dark text-white" style="padding:100px 20px;">
+  <h1>Section 4</h1>
+  <pre>words
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </pre>
+</div>
+
+<div id="section5" class="container-fluid bg-dark text-white" style="padding:100px 20px;">
+  <h1>Section 5</h1>
+  <pre>words
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </pre>
+</div>
+
 </body>
 
 <!--
@@ -89,17 +259,16 @@ grid: show images like a checkerboard
 navbar: done
 
 5 elements
-carousel
+carousel: done
 scrollspy
 colors: white text on black bg or smth like that
 cards: like profiles for smth idk
 spacing
 
 2 elements
-
+no idea
 
 to do that you really shouldnt be spending your time on:
 center navbar
 add padding to elements in navbar
-get navbar's height to not change when you resize window
 -->
